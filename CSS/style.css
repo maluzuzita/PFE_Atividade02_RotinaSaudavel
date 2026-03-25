@@ -73,33 +73,38 @@ h2 {
 
 .estilo-input-botao {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #58b389;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 500px;
 }
 
 input {
-    padding: 10px;
-    margin-left: 5px;
+    flex:1;
+    padding: 12px 20px;
     width: 250px;
     border-radius: 40px;
-    border: 1px solid #ccc;
+    border: none;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-add {
-    padding: 10px 15px;
-    width: 100%;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-left: 5px;
-    background: linear-gradient(to right, #52b992, #469d75);
+    background: linear-gradient(to right, #469d75);
     color: white;
+    border: none;
+    padding: 12px 25px;
     font-weight: bolder;
+    cursor: pointer;
+    transition: ease 0.3s;
 }
 
 .btn-add:hover {
     background: linear-gradient(to right, #469d75, #52b992);
+    transition: ease 0.3s;
 }
 
 table {
@@ -110,6 +115,7 @@ table {
     background: white;
     border-radius: 16px;
     overflow: hidden;
+    transition: ease 0.3s;
 }
 
 th {
@@ -117,15 +123,18 @@ th {
     color: rgb(112, 109, 129);
     padding: 20px;
     width: 100%;
+    transition: ease 0.3s;
 }
 
 td {
     padding: 10px;
-    border-bottom: 1px solid rgb(159, 159, 166);;
+    border-bottom: 1px solid rgb(159, 159, 166);
+    transition: ease 0.3s;
 }
 
 tr:hover {
-    background: #f1f1f1;
+    background: #f9fcfa;
+    transition: ease 0.3s;
 }
 
 .btn-remover {
