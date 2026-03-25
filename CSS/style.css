@@ -1,0 +1,143 @@
+/* Reset e padronização */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #eaeef1;
+    transition: all ease 0.3s;
+}
+
+/* Estilização dos conteúdos do Header */
+header {
+    background: linear-gradient(to right, #52b992, #469d75);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+header:hover {
+    background: linear-gradient(to right, #469d75, #52b992);
+}
+
+.header-subtitulo {
+    margin-left: 2vw;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+/* Cartao e seus conteúdos */
+.centralizar-cartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao {
+    background: linear-gradient(to top, #ffffff, #eaf4ef);
+    width: 500px;
+    height: auto;
+    border-radius: 35px;
+    padding: 2vw 5vw;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(72, 67, 103);
+}
+
+.cartao-subtitulo {
+    color: rgb(122, 120, 138);
+    margin-top: 4px;
+    text-align: start;
+}
+
+.inicio-cartao {
+    margin-bottom: 15px;
+}
+
+.estilo-input-botao {
+    display: flex;
+    align-items: flex-start;
+}
+
+input {
+    padding: 10px;
+    margin-left: 5px;
+    width: 250px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-add {
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+    background: linear-gradient(to right, #52b992, #469d75);
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-add:hover {
+    background: linear-gradient(to right, #469d75, #52b992);
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+th {
+    background: #e8f4eb;
+    color: rgb(112, 109, 129);
+    padding: 20px;
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(159, 159, 166);;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+.btn-remover {
+    padding: 6px 10px;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.btn-remover:hover {
+    background: #c82333;
+}
