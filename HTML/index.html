@@ -49,14 +49,17 @@
 
     <div class="cta-antesHabitTracker"> <!-- CTA para fins publicitários (também) -->
         <div class="centralizar-cta">
-        <h2 class="h2-cta-habitTracker">Crie uma rotina mais saudável!</h2>
-        <p>Você não precisa mudar tudo de uma vez. <br> 
-            O segredo está na constância dos pequenos hábitos <br> 
-            que respeitam o seu ritmo.
-        </p>
-        <h3>Faça parte da comunidade que utiliza o Habit Tracker Vitalis ☺️🍃</h3>
+            <div class="posicao-tituloEsubtitulo-cta">
+                <h2 class="h2-cta-habitTracker">Crie uma rotina mais saudável!</h2>
+                <p class="p-cta-habitTracker">Você não precisa mudar tudo de uma vez. <br>
+                    O segredo está na constância dos pequenos hábitos
+                    que respeitam o seu ritmo.
+                </p>
+                <h3>Faça parte da comunidade que utiliza o Habit Tracker Vitalis ☺️🍃</h3>
+            </div>
         </div>
-    </div> <!-- CTA para fins publicitários (também) -->
+        <img class="img-cta-publicidade" src="../img/cta-publicidade.png" alt="Cultive hábitos novos!">
+    </div> <!-- CTA para fins publicitários -->
 
     <div class="centralizar-cartao"> <!-- Centralizar Cartão -->
         <div class="cartao"> <!-- Cartão -->
@@ -73,7 +76,7 @@
             </div> <!-- Titulo e Subtitulo do Cartão -->
 
             <div class="estilo-input-botao"> <!-- Botão exótico -->
-                <input list="habitosSugestoes" type="text" id="inputHabito"
+                <input list="habitosSugestoes" class="inputHabito" type="text" id="inputHabito" name="inputHabito"
                     placeholder="Planejar minha próxima meta...">
                 <datalist id="habitosSugestoes">
                     <option value="🧘 Meditar 10 minutos">
@@ -82,6 +85,8 @@
                     <option value="📖 Ler 15 páginas">
                     <option value="🗂️ Organizar a mesa">
                 </datalist>
+                <input type="date" class="inputData" id="inputData" name="inputData" placeholder="dd/mm/aaa">
+                <input type="time" class="inputHorario" id="inputHorario" name="inputHorario">
                 <button class="btn-add" onclick="adicionarHabito()">Adicionar Hábito</button>
             </div> <!-- Botão exótico -->
 
@@ -90,6 +95,8 @@
                 <thead>
                     <tr>
                         <th>Hábito</th>
+                        <th class="tr-data">Data</th>
+                        <th>Horário</th>
                         <th>Ação</th>
                     </tr>
                 </thead>
