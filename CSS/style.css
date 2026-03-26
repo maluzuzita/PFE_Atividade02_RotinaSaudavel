@@ -1,152 +1,293 @@
 /* Reset e padronização */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    background-color: #eaeef1;
-    transition: all ease 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: #eaeef1;
+  transition: all ease 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Estilização dos conteúdos do Header */
 header {
-    background: linear-gradient(to right, #52b992, #469d75);
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
+  background: linear-gradient(to right, #52b992, #469d75);
+  color: white;
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
 }
 
 header:hover {
-    background: linear-gradient(to right, #469d75, #52b992);
+  background: linear-gradient(to right, #469d75, #52b992);
 }
 
 .header-subtitulo {
-    margin-left: 2vw;
+  margin-left: 2vw;
 }
 
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 1vw;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1vw;
+  text-align: center;
 }
 
 /* Cartao e seus conteúdos */
 .centralizar-cartao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
 }
 
 .cartao {
-    background: linear-gradient(to top, #ffffff, #eaf4ef);
-    width: 500px;
-    height: auto;
-    border-radius: 35px;
-    padding: 2vw 5vw;
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top, #ffffff, #eaf4ef);
+  width: 600px;
+  height: auto;
+  border-radius: 35px;
+  padding: 2vw 5vw;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    text-align: start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(72, 67, 103);
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(72, 67, 103);
 }
 
 .cartao-subtitulo {
-    color: rgb(122, 120, 138);
-    margin-top: 4px;
-    text-align: start;
+  color: rgb(122, 120, 138);
+  margin-top: 4px;
+  text-align: start;
 }
 
 .inicio-cartao {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .estilo-input-botao {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid #58b389;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: white;
-    max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #58b389;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: white;
+  max-width: 500px;
 }
 
 input {
-    flex:1;
-    padding: 12px 20px;
-    width: 250px;
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+  flex: 1;
+  padding: 12px 20px;
+  width: 250px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-add {
-    background: linear-gradient(to right, #469d75);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: ease 0.3s;
+  background: linear-gradient(to right, #469d75);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .btn-add:hover {
-    background: linear-gradient(to right, #469d75, #52b992);
-    transition: ease 0.3s;
+  background: linear-gradient(to right, #469d75, #52b992);
+  transition: ease 0.3s;
 }
 
 table {
-    margin: 30px auto;
-    border-collapse: collapse;
-    width: 100%;
-    align-items: center;
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: ease 0.3s;
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 100%;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: ease 0.3s;
 }
 
 th {
-    background: #e8f4eb;
-    color: rgb(112, 109, 129);
-    padding: 20px;
-    width: 100%;
-    transition: ease 0.3s;
+  background: #e8f4eb;
+  color: rgb(112, 109, 129);
+  padding: 20px;
+  width: 100%;
+  transition: ease 0.3s;
 }
 
 td {
-    padding: 10px;
-    border-bottom: 1px solid rgb(159, 159, 166);
-    transition: ease 0.3s;
+  padding: 10px;
+  border-bottom: 1px solid rgb(159, 159, 166);
+  transition: ease 0.3s;
 }
 
 tr:hover {
-    background: #f9fcfa;
-    transition: ease 0.3s;
+  background: #f9fcfa;
+  transition: ease 0.3s;
 }
 
 .btn-remover {
-    padding: 6px 10px;
-    border: none;
-    background: #dc3545;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: ease 0.3s;
+  display: flex;
+  gap: 4px;
+  padding: 6px 10px;
+  border: none;
+  background: #dc3545;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 2px;
 }
 
 .btn-remover:hover {
-    background: #c82333;
+  background: #c82333;
+}
+
+.btn-concluir {
+  display: flex;
+  gap: 4px;
+  padding: 6px 10px;
+  border: none;
+  background: #3554dc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-concluir:hover {
+  background: #3c23c8;
+}
+
+/* Estilização do slideshow publicitário */
+.slideshow-container {
+  max-width: 95%;
+  position: relative;
+  margin: 30px auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.slide-texto {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+.btn-cta-slide {
+  background-color: #58b389;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+/* Animação de fade (suave) */
+.fade {
+  animation: fadeAnim 1.5s;
+}
+
+@keyframes fadeAnim {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ponto {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ponto-ativo {
+  background-color: #58b389;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+/* Estilização do CTA que possui fins publicitários (abaixo do slideshow) */
+.cta-antesHabitTracker {
+  background-color: #297d56;
+  width: 100%;
+  text-align: start;
+  padding: 10vh;
+  color: white;
+}
+
+h3 {
+  margin-top: 30px;
+  background: linear-gradient(to right, #52b992, #469d75);
+  color: white;
+  padding: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 18px;
+  width: 50vw;
+}
+
+h3:hover {
+  background: linear-gradient(to right, #469d75, #52b992);
+}
+
+.h2-cta-habitTracker {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 34px;
+}
+
+/* Estilização do Footer */
+footer {
+  background: linear-gradient(to right, #52b992, #469d75);
+  color: white;
+  width: 100%;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+footer:hover {
+  background: linear-gradient(to right, #469d75, #52b992);
 }

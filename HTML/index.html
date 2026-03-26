@@ -7,6 +7,7 @@
     <title>Vitalis</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../CSS/style.css'>
+    <link rel="icon" type="image/png" href="../img/favicon_vitalis.png">
 </head>
 
 <body>
@@ -21,6 +22,41 @@
         </h1>
         <p class="header-subtitulo"><sub>Rotina Saudável</sub></p>
     </header>
+
+    <div class="slideshow-container"> <!-- Slideshow de imagens -->
+        <div class="slides fade">
+            <img src="../img/publicidadeDaSaude.png" alt="Slide 1 comentando sobre hábitos saudáveis"
+                style="width:100%; border-radius: 15px;" />
+        </div>
+
+        <div class="slides fade">
+            <img src="../img/publicidadeFinanceira.png" alt="Slide 2 comentando sobre hábitos financeiros saudáveis"
+                style="width:100%; border-radius: 15px;" />
+        </div>
+
+        <div class="slides fade">
+            <img src="../img/publicidadeReciclaveis.png"
+                alt="Slide  comentando sobre hábitos sociais ótimos para uma vida saudável e econômica"
+                style="width:100%; border-radius: 15px;" />
+        </div>
+
+        <div style="text-align:center; margin-top: 10px;">
+            <span class="ponto"></span>
+            <span class="ponto"></span>
+            <span class="ponto"></span>
+        </div>
+    </div> <!-- Slideshow publicitário -->
+
+    <div class="cta-antesHabitTracker"> <!-- CTA para fins publicitários (também) -->
+        <div class="centralizar-cta">
+        <h2 class="h2-cta-habitTracker">Crie uma rotina mais saudável!</h2>
+        <p>Você não precisa mudar tudo de uma vez. <br> 
+            O segredo está na constância dos pequenos hábitos <br> 
+            que respeitam o seu ritmo.
+        </p>
+        <h3>Faça parte da comunidade que utiliza o Habit Tracker Vitalis ☺️🍃</h3>
+        </div>
+    </div> <!-- CTA para fins publicitários (também) -->
 
     <div class="centralizar-cartao"> <!-- Centralizar Cartão -->
         <div class="cartao"> <!-- Cartão -->
@@ -37,7 +73,15 @@
             </div> <!-- Titulo e Subtitulo do Cartão -->
 
             <div class="estilo-input-botao"> <!-- Botão exótico -->
-                <input type="text" id="inputHabito" placeholder="Planejar minha próxima meta...">
+                <input list="habitosSugestoes" type="text" id="inputHabito"
+                    placeholder="Planejar minha próxima meta...">
+                <datalist id="habitosSugestoes">
+                    <option value="🧘 Meditar 10 minutos">
+                    <option value="🥤 Beber 2 litros de água">
+                    <option value="🚶‍➡️ Caminhar 20 minutos">
+                    <option value="📖 Ler 15 páginas">
+                    <option value="🗂️ Organizar a mesa">
+                </datalist>
                 <button class="btn-add" onclick="adicionarHabito()">Adicionar Hábito</button>
             </div> <!-- Botão exótico -->
 
@@ -55,6 +99,10 @@
             </table> <!-- Tabela -->
         </div> <!-- Cartão -->
     </div> <!-- Centralizar Cartão -->
+
+    <footer>
+        Maria da Silva © <b>Todos os direitos reservados.</b> 2026
+    </footer>
 
     <script src='../JS/index.js'></script>
 </body>
